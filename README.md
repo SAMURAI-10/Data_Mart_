@@ -14,8 +14,10 @@ The key business question client wanted me to help him answer were:
 For this case study there is only a single table: **data_mart.weekly_sales**.
 The Entity Relationship Diagram is shown below with the data types made clear.
 
+<img width="153" height="203" alt="weekly sales" src="https://github.com/user-attachments/assets/925380ef-42d2-4cbd-af6f-d22f8d8f4af9" />
 
 The columns are pretty self-explanatory based on the column names but here are some further details about the dataset:
+<img width="435" height="123" alt="weekly_Sales table" src="https://github.com/user-attachments/assets/c69ebd94-157d-412d-9930-a2a137f4a59b" />
 
 
 - Data Mart has international operations using a multi-_region_ strategy.
@@ -49,6 +51,9 @@ create table clean_weekly_sales as                                      -- creat
   round(sales/transactions,2) as avg_transaction                            -- created avg_transaction column
 from weekly_sales;
 ```
+
+<img width="999" height="201" alt="clean weekly table" src="https://github.com/user-attachments/assets/289239d2-4b32-44ae-9d98-323780943f8a" />
+
 
 ## Data Exploration
 ### How many total transactions were there for each year in the dataset?
@@ -109,7 +114,7 @@ select age_band,demographic ,sum(sales)
 Taking the week_date value of 2020-06-15 as the week where the Data Mart sustainable packaging changes came into effect.
 I have included all week_date values for 2020-06-15 as the start of the period after the change and the previous week_date values would be before
 
-### What is the total sales for the 4 weeks before and after 2020-06-15? 
+### What is the total sales for the 4 weeks before and after changes came into effect? 
 ### What is the growth or reduction rate in actual values and percentage of sales?
 ```sql
 with cte1 as (
@@ -127,3 +132,34 @@ select sales_before,sales_after
 ,(sales_after-sales_before) * 100/sales_before
 from cte1,cte2;
 ```
+<img width="419" height="61" alt="4weeks2020" src="https://github.com/user-attachments/assets/2c5690a9-f860-4ff9-b086-f8ade125c6bc" />
+
+### Output for the entire 12 weeks before and after the packaging changes.
+<img width="421" height="61" alt="12weeks 2020" src="https://github.com/user-attachments/assets/7ba2de8a-d685-4335-a527-ed721b3e020e" />
+
+### How do the sale metrics for 4 weeks before and after compare with the previous years in 2018 and 2019?
+#### Sales growth percentage for 4 weeks before and after 15th june 2019.
+<img width="417" height="53" alt="4weeks 2019" src="https://github.com/user-attachments/assets/eb7bca02-d7f3-4b0b-b6cc-434000247e56" />
+
+
+
+#### For 2018
+<img width="421" height="61" alt="4 weeks 2018 growth" src="https://github.com/user-attachments/assets/346f730c-e143-446c-b2a2-1645f05437a1" />
+
+### Which areas of the business have the highest negative impact in sales metrics performance in 2020 for the 12 week before and after period?
+
+#### Region
+<img width="519" height="147" alt="impact region" src="https://github.com/user-attachments/assets/01bbff3e-5ced-4f73-a7f5-a471a83fc834" />
+Sales have declined in Asia and Oceania regions by 2.2% meanwhile europe had maximum growth percentage of 3.88%  
+
+#### Platform
+<img width="465" height="65" alt="impact platform" src="https://github.com/user-attachments/assets/3364334e-bbcf-4508-90cb-8453ccf7ceba" />
+
+#### Age_band
+<img width="495" height="99" alt="impact age_band" src="https://github.com/user-attachments/assets/f520635e-8267-4f28-99ea-80bc9df62125" />
+
+#### Demographic
+<img width="507" height="75" alt="impact demographic" src="https://github.com/user-attachments/assets/22f9449c-5fc0-46c8-bcb9-d4aa37d99827" />
+
+#### Customer_type
+<img width="553" height="85" alt="impact cust_Type" src="https://github.com/user-attachments/assets/c7ea4a34-dfe1-47ed-8a6d-c062dd1f48d3" />
