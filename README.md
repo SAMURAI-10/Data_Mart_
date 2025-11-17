@@ -1,4 +1,4 @@
-# Data Analysis of a Mart's Data
+# Data Analysis of a Mart's Data using SQL
 
 ## Intoduction
 A Client's company, "Data Mart," is an online supermarket selling fresh produce, and he needs help analyzing its sales performance after a major change was made in June 2020. This change involved switching to sustainable packaging for all products, and client wants to understand how this decision affected his business, looking at sales performance across different areas and deciding how to handle such future updates to avoid disrupting sales. 
