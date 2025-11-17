@@ -1,7 +1,7 @@
 # Data Analysis of a Mart's Data
 
 ## Intoduction
-A Client's company, "Data Mart," is an online supermarket selling fresh produce, and he needs help analyzing its sales performance after a major change was made in June 2020. This change involved switching to sustainable packaging for all products, and client wants to understand how this decision affected his business, looking at sales performance across different areas and deciding how to handle future updates to avoid disrupting sales. 
+A Client's company, "Data Mart," is an online supermarket selling fresh produce, and he needs help analyzing its sales performance after a major change was made in June 2020. This change involved switching to sustainable packaging for all products, and client wants to understand how this decision affected his business, looking at sales performance across different areas and deciding how to handle such future updates to avoid disrupting sales. 
 
 ## Objective
 The key business question client wanted me to help him answer were:
@@ -170,3 +170,18 @@ Families had most -1.7% and Couples had least -0.3% pf reduction rate.
 <img width="553" height="85" alt="impact cust_Type" src="https://github.com/user-attachments/assets/c7ea4a34-dfe1-47ed-8a6d-c062dd1f48d3" /> <br>
 Existing cutomers had most -1.3% and new customers had the least -0.6% reduction rate.
 
+##   Conclusion
+<ins>**Negative Impact**</ins> <br>
+The introduction of sustainable packaging in June 2020 resulted in an immediate drop in sales (around 1.15% decline) when compared to sales during the same period in previous years (2019 and 2018).
+The total decline in sales after 12 weeks of packaging change resulted in loss of 152 million $ . <br>
+<ins>**Impact on different segments**</ins> <br>
+Overall, the business is experiencing a general decline across most customer groups and platforms, with the sharpest drops seen in the Asia and Oceania region, middle-aged customers, families, and existing customers.
+While Europe Canada and Africa shows positive growth, the downward trends in key demographics and regions indicate a need for strategic efforts to retain customers and rebuild performance. <br>
+<ins>**Suggestions to handle such future updates**</ins> <br>
+Conduct Pilot Testing Before Full Rollout: <br>
+Test new packaging changes on a small region or customer group first. <br>
+Monitor customer reaction, sales trends, operational issues,Customer complaints/returns,Delivery efficiency and adjust before scaling.<br>
+Inform customers before the change takes effect.<br>
+Highlight benefits such as Environmental impact, improved quality, and smoother process.
+Many customers respond favorably when they understand the purpose and impact.
+  
